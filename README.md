@@ -12,7 +12,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
-  <img src="assets/activity-light.svg" width="100%" alt="23-day streak, 1,182 contributions in the last 12 months">
+  <img src="assets/activity-light.svg" width="100%" alt="1-day streak, 3 contributions in the last 12 months">
 </picture>
 
 <br>
@@ -25,6 +25,6 @@
 
 <br>
 
-<sub>sample stats until the first Actions run</sub>
+<sub>synced 2026-10-20 · 00:00 AST</sub>
 
 </div>
