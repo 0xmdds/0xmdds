@@ -2,29 +2,29 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-  <img src="assets/hero-light.svg" width="100%" alt="Muhannad Alshehri: Data Science, Riyadh. Dot portrait with live GitHub stats.">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=202610201102">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg?v=202610201102">
+  <img src="assets/hero-light.svg?v=202610201102" width="100%" alt="Muhannad Alshehri: Data Science, Riyadh. Dot portrait with live GitHub stats.">
 </picture>
 
 <br>
 
-<a href="https://www.linkedin.com/in/muhannad-alshehri-5a6215316/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-linkedin-dark.svg"><img src="assets/link-linkedin-light.svg" height="40" alt="Linkedin"></picture></a>&nbsp;<a href="https://x.com/m_alshehri970"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-x-dark.svg"><img src="assets/link-x-light.svg" height="40" alt="@M_Alshehri970"></picture></a>&nbsp;<a href="mailto:m.alshehri970@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-email-dark.svg"><img src="assets/link-email-light.svg" height="40" alt="Email"></picture></a>
+<a href="https://www.linkedin.com/in/muhannad-alshehri-5a6215316/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-linkedin-dark.svg?v=202610201102"><img src="assets/link-linkedin-light.svg?v=202610201102" height="40" alt="Linkedin"></picture></a>&nbsp;<a href="https://x.com/m_alshehri970"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-x-dark.svg?v=202610201102"><img src="assets/link-x-light.svg?v=202610201102" height="40" alt="@M_Alshehri970"></picture></a>&nbsp;<a href="mailto:m.alshehri970@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-email-dark.svg?v=202610201102"><img src="assets/link-email-light.svg?v=202610201102" height="40" alt="Email"></picture></a>
 
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
-  <img src="assets/activity-light.svg" width="100%" alt="1-day streak, 4 contributions in the last 12 months">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg?v=202610201102">
+  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg?v=202610201102">
+  <img src="assets/activity-light.svg?v=202610201102" width="100%" alt="1-day streak, 5 contributions in the last 12 months">
 </picture>
 
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg">
-  <img src="assets/stack-light.svg" width="100%" alt="Tech stack">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg?v=202610201102">
+  <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg?v=202610201102">
+  <img src="assets/stack-light.svg?v=202610201102" width="100%" alt="Tech stack">
 </picture>
 
 <br>
