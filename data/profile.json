@@ -1,27 +1,46 @@
 {
   "name": "Muhannad Alshehri",
-  "username": "",
-  "role": "Software Engineer",
-  "tagline": "Build · Ship · Scale",
-  "bio": "Building useful software from Riyadh.",
+  "username": "0xmdds",
+  "role": "Data Science",
+  "tagline": "Data · AI · Systems",
+  "bio": "Data science and AI engineering, built on solid software.",
   "city": "Riyadh",
-
   "stack": {
-    "languages": ["TypeScript", "Python", "Go"],
-    "web": ["React", "Next.js", "Tailwind"],
-    "backend": ["Node", "FastAPI"],
-    "data": ["Postgres", "Redis"],
-    "infra": ["AWS", "Vercel"],
-    "tools": ["Docker", "Git", "VS Code"]
+    "languages": [
+      "C#",
+      "C++",
+      "Python",
+      "PHP"
+    ],
+    "web": [
+      "Angular"
+    ],
+    "backend": [
+      "Laravel",
+      ".NET"
+    ],
+    "data": [
+      "PostgreSQL",
+      "SQL Server"
+    ],
+    "infra": [
+      "Docker",
+      "Linux"
+    ],
+    "tools": [
+      "VS Code",
+      "Figma"
+    ]
   },
-  "now": "Your current project",
-
+  "now": "AI Engineering · ML · ERP",
   "links": {
-    "linkedin": "",
-    "x": "",
-    "email": "",
+    "linkedin": "https://www.linkedin.com/in/muhannad-alshehri-5a6215316/",
+    "x": "m_alshehri970",
+    "email": "m.alshehri970@gmail.com",
     "website": ""
   },
-
-  "accent": { "light": "#b45f06", "dark": "#f0a64a" }
+  "accent": {
+    "light": "#b45f06",
+    "dark": "#f0a64a"
+  }
 }
