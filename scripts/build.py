@@ -538,7 +538,7 @@ def build_hero(p: dict, s: dict, theme: str, login: str) -> str:
     stk = p.get("stack", {})
     j = lambda *keys: " · ".join(v for k in keys for v in stk.get(k, []) if v)
     rows = [("BASE", f"{ci['city']}, Saudi Arabia"), ("STACK", j("languages")), ("WEB", j("web")),
-            ("BACKEND", j("backend", "data")), ("INFRA", j("infra", "tools")), ("NOW", p.get("now", ""))]
+            ("BACKEND", j("backend", "data")), ("TOOLS", j("infra", "tools")), ("NOW", p.get("now", ""))]
     rows = [r for r in rows if r[1] and r[1].strip()]
     rs = ""
     for i, (k, v) in enumerate(rows):
@@ -655,12 +655,12 @@ def build_activity(p: dict, s: dict, theme: str) -> str:
 # --------------------------------------------------------------------------- stack
 
 SYM = {"typescript": "Ts", "javascript": "Js", "python": "Py", "go": "Go", "golang": "Go", "rust": "Rs",
-       "java": "Jv", "kotlin": "Kt", "swift": "Sw", "dart": "Dt", "php": "Ph", "ruby": "Rb", "c++": "C+",
+       "java": "Jv", "kotlin": "Kt", "swift": "Sw", "dart": "Dt", "php": "Ph", "ruby": "Rb", "c++": "C++",
        "c#": "C#", "c": "C", "solidity": "Sl", "react": "Re", "next.js": "Nx", "nextjs": "Nx", "vue": "Vu",
        "angular": "Ng", "svelte": "Sv", "tailwind": "Tw", "flutter": "Fl", "three.js": "3j", "node": "Nd",
        "node.js": "Nd", "fastapi": "Fa", "django": "Dj", "flask": "Fk", "express": "Ex", "nestjs": "Ns",
        "spring": "Sp", "laravel": "Lv", ".net": "Nt", "postgres": "Pg", "postgresql": "Pg", "mysql": "My",
-       "mongodb": "Mg", "redis": "Rd", "supabase": "Sb", "firebase": "Fb", "sqlite": "Sq", "aws": "Aw",
+       "mongodb": "Mg", "redis": "Rd", "supabase": "Sb", "firebase": "Fb", "sqlite": "Sq", "sql server": "Ss", "mssql": "Ss", "aws": "Aw",
        "gcp": "Gc", "azure": "Az", "vercel": "Vc", "docker": "Dk", "kubernetes": "K8", "git": "Gt",
        "vs code": "Vs", "vscode": "Vs", "linux": "Lx", "figma": "Fg", "cursor": "Cu", "html": "Ht", "css": "Cs",
        "sql": "Sq", "pytorch": "Pt", "tensorflow": "Tf", "pandas": "Pd", "numpy": "Np"}
@@ -750,10 +750,13 @@ def build_chip(c: dict, theme: str, accent: dict) -> str:
 
 # --------------------------------------------------------------------------- readme
 
+VER = NOW.strftime("%Y%m%d%H%M")      # new URL on every run, so GitHub never shows a stale cached image
+
+
 def picture(name: str, alt: str, width: str = "100%") -> str:
-    return (f'<picture>\n  <source media="(prefers-color-scheme: dark)" srcset="assets/{name}-dark.svg">\n'
-            f'  <source media="(prefers-color-scheme: light)" srcset="assets/{name}-light.svg">\n'
-            f'  <img src="assets/{name}-light.svg" width="{width}" alt="{esc(alt)}">\n</picture>')
+    return (f'<picture>\n  <source media="(prefers-color-scheme: dark)" srcset="assets/{name}-dark.svg?v={VER}">\n'
+            f'  <source media="(prefers-color-scheme: light)" srcset="assets/{name}-light.svg?v={VER}">\n'
+            f'  <img src="assets/{name}-light.svg?v={VER}" width="{width}" alt="{esc(alt)}">\n</picture>')
 
 
 def readme(p: dict, s: dict, chips: list[dict], has_stack: bool) -> str:
@@ -765,8 +768,8 @@ def readme(p: dict, s: dict, chips: list[dict], has_stack: bool) -> str:
              "", "<br>", ""]
     if chips:
         parts.append("&nbsp;".join(
-            f'<a href="{esc(c["url"])}"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-{c["id"]}-dark.svg">'
-            f'<img src="assets/link-{c["id"]}-light.svg" height="40" alt="{esc(c["label"].title())}"></picture></a>' for c in chips))
+            f'<a href="{esc(c["url"])}"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-{c["id"]}-dark.svg?v={VER}">'
+            f'<img src="assets/link-{c["id"]}-light.svg?v={VER}" height="40" alt="{esc(c["label"].title())}"></picture></a>' for c in chips))
         parts += ["", "<br>", ""]
     parts += [picture("activity", f"{s['streak']}-day streak, {s['total']:,} contributions in the last 12 months"), "", "<br>", ""]
     if has_stack:
