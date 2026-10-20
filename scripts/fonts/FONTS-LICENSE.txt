@@ -1,0 +1,2 @@
+Martian Mono (Evil Martians) and JetBrains Mono (JetBrains) are licensed under the SIL Open Font License 1.1: https://openfontlicense.org
+They are embedded, subsetted, into the generated SVGs.
