@@ -4,15 +4,19 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-  <img src="assets/hero-light.svg" width="100%" alt="Muhannad Alshehri: Software Engineer, Riyadh. Dot portrait with live GitHub stats.">
+  <img src="assets/hero-light.svg" width="100%" alt="Muhannad Alshehri: Data Science, Riyadh. Dot portrait with live GitHub stats.">
 </picture>
+
+<br>
+
+<a href="https://www.linkedin.com/in/muhannad-alshehri-5a6215316/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-linkedin-dark.svg"><img src="assets/link-linkedin-light.svg" height="40" alt="Linkedin"></picture></a>&nbsp;<a href="https://x.com/m_alshehri970"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-x-dark.svg"><img src="assets/link-x-light.svg" height="40" alt="@M_Alshehri970"></picture></a>&nbsp;<a href="mailto:m.alshehri970@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-email-dark.svg"><img src="assets/link-email-light.svg" height="40" alt="Email"></picture></a>
 
 <br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
-  <img src="assets/activity-light.svg" width="100%" alt="1-day streak, 3 contributions in the last 12 months">
+  <img src="assets/activity-light.svg" width="100%" alt="1-day streak, 4 contributions in the last 12 months">
 </picture>
 
 <br>
